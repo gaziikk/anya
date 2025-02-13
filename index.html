@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Святого Валентина!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffebee;
+            color: #d32f2f;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+        .heart {
+            color: #d32f2f;
+            font-size: 4rem;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #b71c1c;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>С Днём Святого Валентина! 💌</h1>
+        <p>Дорогая Аня,</p>
+        <p>Ты - самое прекрасное, что случалось в моей жизни. Твоя улыбка согревает моё сердце, а твоё присутствие в моей жизни заставляет меня улыбаться каждый день.</p> 
+        <p>Спасибо, что ты есть!</p>
+        <p>Я дарю тебе своё сердце и обещаю всегда быть рядом. 💖</p>
+        <div class="heart">❤️</div>
+        <button class="button" onclick="showMessage()">Нажми, чтобы узнать, как сильно я тебя люблю!</button>
+        <div id="hiddenMessage" class="hidden-message">
+            Ты - моя единственная, и я люблю тебя больше, чем слова могут выразить! 💕
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('hiddenMessage');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
