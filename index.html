@@ -10,20 +10,20 @@
             background-color: #ffebee;
             color: #d32f2f;
             text-align: center;
-            padding: 20px 50px 50px 50px;
+            padding: 20px;
             margin: 0;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             line-height: 1.6;
         }
         .heart {
             color: #d32f2f;
-            font-size: 4rem;
+            font-size: 3rem;
             animation: beat 1s infinite;
         }
         @keyframes beat {
@@ -32,9 +32,9 @@
         }
         .button {
             display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
             color: #fff;
             background-color: #d32f2f;
             border: none;
@@ -48,8 +48,46 @@
         .hidden-message {
             display: none;
             margin-top: 20px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #d32f2f;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .heart {
+                font-size: 2.5rem;
+            }
+            .button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            .hidden-message {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .heart {
+                font-size: 2rem;
+            }
+            .button {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            .hidden-message {
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
